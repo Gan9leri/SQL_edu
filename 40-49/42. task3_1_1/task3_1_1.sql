@@ -1,3 +1,7 @@
+--Выведите имена сотрудников, страны и регионы. С помощью выражения CASE добавьте 
+--новый временный столбец Region и замените пустые значения NULL на значения 'not defined'. 
+--У скольких сотрудников регион равен 'not defined'?
+
 with null_table as (
 Select EmployeeID, FirstName, Country,
 case when Region is null then 'not defined' 
